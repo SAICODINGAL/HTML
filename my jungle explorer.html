@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>my jungle explorer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width",initial-scale=1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+    body {position: relative;}
+    .safari-slide{height: 200 px; text-align: center; padding-top: 75px; font-size: 1.8rem; color: white;}
+    .safari-forest{background: darkgreen;}
+    .slide-ocean{background:steelblue ;}
+    .slide-desert{background: orange;}
+    .section{padding:70px 20px;min-height: 300px;}
+    #forest{background: honeydew;}
+        #ocean{background: aliceblue;}
+            #desert{background: lightyellow;}
+</style>
+    </head>
+    <body data-spy="scroll" data-target="#safari nav" data-offest="60">
+     <!--topic1,2,3:carousal-->
+     <div id="safaricaorusal" class="carousal slide" data-slide="carousal">
+        <ol class="carousal-indicators">
+            <li data-target="#safaricarousal" data-slide-to="0" class="active"></li>
+             <li data-target="#safaricarousal" data-slide-to="1" class="active"></li>
+              <li data-target="#safaricarousal" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousal-inner">
+            <div class="carousal-item active safari-slide slide-forest">forest safari</div>
+            <div class="carousal-item active safari-slide slide-ocean">ocean safari</div>
+            <div class="carousal-item active safari-slide slide-desert">desert safari</div>
+        </div>
+        <a class="carousal-control-prev" href="#safaricaeousal" data-slide="prev">
+            <span class="carousal-control-prev-icon"></span>
+        </a>
+        <a class="carousal-control-next" href="#safaricarousal" data-slide="next">
+            <span class="carousal-control-next-icon"></span>
+        </a>
+     </div>
+     <!--topic4:scrollspy-->
+     <nav id="safarinav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <span class="navbar-brand">safari guide</span>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#forest">forest</li></a>
+                        <li class="nav-item"><a class="nav-link" href="#ocean">ocean</li></a>
+                                    <li class="nav-item"><a class="nav-link" href="#desert">desert</li></a>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div id="forest" class="secction">
+            <h2>forest safari</h2>
+            <p>explore tall trees and discover tigers,elephant,and monkeys</p>
+
+            <div id="ocean" class="secction">
+            <h2>ocean safari</h2>
+            <p>dive deep and meet dolphins,sharks,and colorful clownfishes</p>
+             <div id="desert" class="secction">
+            <h2>desert safari</h2>
+            <p>trek across the sand dunes and spot camels,lizard,and desert foxes</p>
+             </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+            </script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+            </script>
+            </body>
+</html>
